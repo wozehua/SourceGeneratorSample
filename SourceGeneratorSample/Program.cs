@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿# pragma warning disable CS8321
+using GreetingTest;
+
+Greeting.SayHelloTo("testName"); 
+Lesson1Greeting();
+
+static void Lesson1Greeting() => GreetingUsePartialClass.SayHelloTo("tetsPartialClass");
